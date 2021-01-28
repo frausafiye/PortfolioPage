@@ -20,7 +20,6 @@ export default function Skills(props) {
         <article>
           <h3>Back End</h3>
            <Skill lang='Node' value='50%'/>
-           <Skill lang='PHP' value='20%'/>
            <Skill lang='Python' value='20%'/>
         </article>
       </div>
