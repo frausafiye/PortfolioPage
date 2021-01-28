@@ -1,0 +1,23 @@
+/** @format */
+
+.footer {
+  padding-bottom: 0.75rem;
+  background: #222;
+  display: grid;
+  place-items: center;
+}
+.footer .social-icons {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* .footer .social-icon {
+  color: var(--clr-primary-5);
+}*/
+.footer .social-icon:hover {
+  color: var(--clr-primary-10);
+}
+.footer p {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}

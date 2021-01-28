@@ -1,0 +1,32 @@
+/** @format */
+
+.about {
+  background-color: rgb(219, 218, 219);
+}
+.about-title {
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.about-center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    flex-direction: row;
+  }
+  .about-img {
+    position: relative;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .about-img::before {
+    left: -2rem;
+  }
+  .about-info {
+    max-width: 700px;
+    margin-right: 2rem;
+  }
+}

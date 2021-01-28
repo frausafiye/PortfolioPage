@@ -1,0 +1,44 @@
+/** @format */
+
+.service {
+  background: var(--clr-white);
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.service .underline {
+  height: 0.15rem;
+}
+.service,
+.service .underline,
+.service p {
+  transition: var(--transition);
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  background-color: rgb(169, 17, 211);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

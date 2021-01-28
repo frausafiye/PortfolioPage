@@ -1,0 +1,15 @@
+/** @format */
+
+.social-icons {
+  display: flex;
+  width: 20rem;
+  justify-content: space-evenly;
+}
+.social-icon {
+  font-size: 1.5rem;
+  color: rgb(201, 175, 209);
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: rgba(93, 9, 121, 1);
+}
