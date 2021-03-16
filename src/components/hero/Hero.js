@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialIcons from '../social-icons/SocialIcons'
 import {Link} from 'react-router-dom'
-import HeroImage from '../../images/about-img.jpg'
+import HeroImage from '../../images/about-img.JPG'
 import './hero.css'
 
 export default function Hero() {
