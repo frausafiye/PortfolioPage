@@ -28,7 +28,7 @@
   margin-bottom: 1.5rem;
 }
 .nav-links a:hover {
-  color: var(--clr-primary-10);
+  color: rgb(253, 250, 235);
 }
 
 .nav-btn {

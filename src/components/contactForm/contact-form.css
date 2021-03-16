@@ -1,0 +1,77 @@
+#container {
+  background-color:rgb(219, 218, 219);
+  color: black;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+  padding: 5vw;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.form-wrap {
+  background-color: rgb(95, 24, 110);
+  padding: 30px 25px;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+
+}
+
+.form-wrap h3,
+.form-wrap p {
+  text-align: center;
+  color:#fff
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  color:#fff;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.form-wrap button {
+  background-color: rgb(201, 175, 209);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(95, 24, 110);
+
+  cursor: pointer;
+}
+
+.form-wrap button:hover {
+  color:#fff;
+  background: #9c37a0;
+}
+
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.succeed-box {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+.btn-box{
+  display: block;
+  background-color:rgb(219, 218, 219);
+  height: 10vh;
+}
+.form-btn{
+  position: absolute;
+  text-align: center;
+  margin: 2vh auto;
+}

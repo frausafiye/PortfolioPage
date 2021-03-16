@@ -1,5 +1,5 @@
 {
-  " name": "myPortfolio-react",
+  "name": "myportfolio-react",
   "version": "1.0.0",
   "description": "des",
   "scripts": {
@@ -35,6 +35,6 @@
       "last 1 safari version"
     ]
   },
-  "author": "naqvi",
+  "author": "safiye",
   "license": "ISC"
 }

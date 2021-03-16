@@ -8,25 +8,6 @@
  */
 
 :root {
-  /* dark tones of primary color*/
-  --clr-primary-1: rgb(81, 60, 6);
-  --clr-primary-2: rgb(122, 92, 16);
-  --clr-primary-3: rgb(162, 124, 26);
-  --clr-primary-4: rgb(200, 153, 45);
-  /* primary color */
-  --clr-primary-5: rgb(233, 185, 73);
-  /* lighter tones of primary color */
-  --clr-primary-6: rgb(247, 208, 110);
-  --clr-primary-7: rgb(249, 218, 139);
-  --clr-primary-8: rgb(248, 225, 165);
-  --clr-primary-9: rgb(252, 238, 197);
-  --clr-primary-10: rgb(253, 250, 235);
-  /* darkest grey - used for headings */
-  /* grey used for paragraphs */
-  --clr-grey-1: rgb(16, 42, 66);
-  --clr-grey-2: rgb(97, 125, 152);
-  --clr-grey-3: rgb(241, 245, 248);
-  --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -57,8 +38,8 @@ Global Styles
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
+  background: #fff;
+  color: rgb(16, 42, 66);
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -96,7 +77,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-2);
+  color:rgb(97, 125, 152);
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -129,7 +110,7 @@ Global Classes
 
 .btn {
   background: rgba(93, 9, 121, 1);
-  color: var(--clr-primary-10);
+  color:  rgb(253, 250, 235);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -143,7 +124,7 @@ Global Classes
 }
 .btn:hover {
   color: rgba(93, 9, 121, 1);
-  background: var(--clr-grey-3);
+  background:rgb(241, 245, 248);
 }
 .section {
   padding: 3rem 0;
@@ -159,7 +140,6 @@ Global Classes
   width: 5rem;
   height: 0.25rem;
   margin: 0 auto;
-  /* background: rgb(204, 207, 207); */
   background: linear-gradient(
     90deg,
     rgba(204, 207, 207, 1) 0%,

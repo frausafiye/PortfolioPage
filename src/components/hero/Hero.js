@@ -11,8 +11,8 @@ export default function Hero() {
         <article className="hero-info">
           <div className="underline"></div>
           <h1>I'm Safiye Gulenc</h1>
-          <h4>Freelance Full-Stack Web Developer</h4>
-          <Link to="./contact" className="btn hero-btn">HIRE ME</Link>
+          <h4>Full-Stack Web Developer</h4>
+          <Link to="/contactForm" className="btn hero-btn">HIRE ME</Link>
            <SocialIcons classPlus='hero-icons'/>
         </article>
         <article className="hero-img">

@@ -1,12 +1,8 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
-
-//classname,link,src, title and date is required
 
 export default function Project(props) {
   return (
-        <Link to={props.to?props.to:'/projects'} className={props.className}>
+        <a href={props.to?props.to:'#projects'} className={props.className}>
           <article className="project">
             <img
               src={props.src}
@@ -15,12 +11,10 @@ export default function Project(props) {
             />
             <div className="project-info">
               <h4>{props.title}</h4>
-              <p>Date:{props.date}</p>
+              <p>Technologies:{props.tech}</p>
             </div>
           </article>
-        </Link>
+        </a>
 
   )
 }
-// use live code and link to github account
-//

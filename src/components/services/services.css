@@ -1,7 +1,7 @@
 /** @format */
 
 .service {
-  background: var(--clr-white);
+  background: #fff;
   padding: 1.5rem 1rem;
   margin-bottom: 1rem;
   border-radius: var(--radius);
@@ -20,15 +20,15 @@
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
+  background: rgb(233, 185, 73);
   color: var(--clr-white);
   background-color: rgb(169, 17, 211);
 }
 .service:hover p {
-  color: var(--clr-white);
+  color: #fff;
 }
 .service:hover .underline {
-  background: var(--clr-white);
+  background: #fff;
 }
 @media screen and (min-width: 676px) {
   .services-center {

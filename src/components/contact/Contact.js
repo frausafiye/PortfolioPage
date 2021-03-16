@@ -26,13 +26,9 @@ export default function Contact() {
           <div className="underline"></div>
         </div>
         <p className="connect-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
-          perferendis exercitationem sit. Beatae eius commodi officiis rem
-          soluta ratione dignissimos quisquam tempore laudantium, porro vitae
-          cupiditate dicta magni quas corrupti aperiam, rerum minus odio totam
-          repellendus delectus nostrum veniam!
+          Now I am looking for a web development position where I can work with all my passion, while collaborating with colleagues. Take a look at my work or feel free to get in touch!
         </p>
-        <Link to="/contact" className="btn connect-btn">CONTACT ME</Link>
+        <Link to="/contactForm" className="btn connect-btn">CONTACT ME</Link>
       </div>
     </section>
       )

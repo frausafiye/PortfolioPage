@@ -7,10 +7,10 @@ import './navbar.css'
 
 export default function Navbar() {
   return (
-    <nav class="nav">
+    <nav className="nav">
       <NavLinks type='horizontal'/>
-      <div class="vertical-nav-box">
-        <button class="nav-btn" id="nav-btn">
+      <div className="vertical-nav-box">
+        <button className="nav-btn" id="nav-btn">
           <FontAwesomeIcon icon={faBars} />
         </button>
         <NavLinks type='vertical'/>

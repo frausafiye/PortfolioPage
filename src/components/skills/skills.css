@@ -2,14 +2,14 @@
 
 .skills h3 {
   margin: 0.5rem 0;
-  color: var(--clr-primary-1);
+  color: rgb(81, 60, 6);
 }
 .skill {
   margin-bottom: 1.25rem;
 }
 .skill p {
   margin-bottom: 0.5rem;
-  color: var(--clr-primary-1);
+  color:  rgb(81, 60, 6);
 }
 .skill-container {
   background-color: rgb(216, 203, 219);

@@ -36,7 +36,7 @@
   opacity: 0.1;
 }
 .single-project {
-  background: var(--clr-grey-3);
+  background: rgb(241, 245, 248);
 
   border-radius: var(--radius);
 }

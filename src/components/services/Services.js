@@ -24,7 +24,7 @@ export default function Services() {
       </div>
       <div className="services-center section-center">
         {myServices.map(serviceItem=>
-          <Service icon={serviceItem.icon} name={serviceItem.name} text={serviceItem.text}/>
+          <Service key={serviceItem.name} icon={serviceItem.icon} name={serviceItem.name} text={serviceItem.text}/>
           )}
       </div>
     </section>

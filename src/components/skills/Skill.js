@@ -1,15 +1,17 @@
 import React,{useEffect,useState} from 'react'
-import styled,{css, keyframes } from "styled-components";
+import styled,{keyframes } from "styled-components";
+import { createHashHistory } from 'history';
 
 export default function Skill(props) {
   const [scrolling,setScrolling]=useState("paused")
+  let History=createHashHistory()
   useEffect(() => {
-    window.addEventListener("scroll",(e)=>{
-      if(window.pageYOffset>2500 && window.pageYOffset<2900){
+    let func=(e)=>{if(window.pageYOffset>2500 && window.pageYOffset<2900){
         setScrolling("running");
-      }
-    })
-    return(()=>{window.removeEventListener("scroll")})
+      }}
+    if(History.location.pathname=="/"){
+      window.addEventListener("scroll",(e)=>func(e))}
+    return(()=>{window.removeEventListener("scroll",func)})
   }, [])
   let getChangeWidth = (props) => keyframes`
     0% { width:0 }
