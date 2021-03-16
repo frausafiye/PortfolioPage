@@ -21,7 +21,7 @@
 }
 .service:hover {
   background: rgb(233, 185, 73);
-  color: var(--clr-white);
+  color: #fff;
   background-color: rgb(169, 17, 211);
 }
 .service:hover p {
@@ -37,8 +37,4 @@
     column-gap: 2rem;
   }
 }
-@media screen and (min-width: 992px) {
-  .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+

@@ -8,11 +8,10 @@ class Aservice{
     this.text=text
   }
 }
-const webDev=new Aservice(['fas', 'code'],'Web Development','   Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum in. Voluptates amet architecto sed reiciendis voluptate voluptatem animi aspernatur error velit, sequi nihil, id repudiandae. Cupiditate omnis sequi iure aut et? Qui sapiente, dolorem alias culpa maxime quas dolor doloribus ipsum consectetur obcaecati, fuga ex velit nobis officia eum.')
-const webDesign=new Aservice(['fab', 'sketch'],'Web Design','   Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum in. Voluptates amet architecto sed reiciendis voluptate voluptatem animi aspernatur error velit, sequi nihil, id repudiandae. Cupiditate omnis sequi iure aut et? Qui sapiente, dolorem alias culpa maxime quas dolor doloribus ipsum consectetur obcaecati, fuga ex velit nobis officia eum.')
-const appDesign=new Aservice(['fab', 'android'],'App Design','   Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum in. Voluptates amet architecto sed reiciendis voluptate voluptatem animi aspernatur error velit, sequi nihil, id repudiandae. Cupiditate omnis sequi iure aut et? Qui sapiente, dolorem alias culpa maxime quas dolor doloribus ipsum consectetur obcaecati, fuga ex velit nobis officia eum.')
+const frontEnd=new Aservice(['fas', 'code'],'Front-End','With my knowledge of es7 + html, css, javascript and its library react as well as with my skills to develop responsive web pages, I am ready to work as a front-end developer. Feel free to have a look at my projects!')
+const backEnd=new Aservice(['fab', 'android'],'Back-end','In addition to my front-end knowledge and to complement it, I also improved my skills in node.js, mongodb and mongoose. I put it into practice by doing full stack projects. I continue to improve my progress on this issue. Dont forget to check out my projects!')
 
-const myServices=[webDev,webDesign,appDesign]
+const myServices=[frontEnd,backEnd]
 
 export default function Services() {
 
