@@ -9,7 +9,7 @@
 }
 .skill p {
   margin-bottom: 0.5rem;
-  color:  rgb(81, 60, 6);
+  color: rgb(81, 60, 6);
 }
 .skill-container {
   background-color: rgb(216, 203, 219);
@@ -33,6 +33,26 @@
   transform: translateX(-50%);
 }
 
+.skillBox {
+  background: rgba(93, 9, 121, 1);
+  color: rgb(253, 250, 235);
+  padding: 0.375rem 0.75rem;
+  margin-right: 5px;
+  letter-spacing: var(--spacing);
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.skillBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .skills-center {
     display: grid;

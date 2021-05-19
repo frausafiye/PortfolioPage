@@ -9,11 +9,6 @@ export default function ContactForm(props) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let formData = new FormData();
-    let mail = {};
-    for (let pair of formData) {
-      mail[pair[0]] = pair[1];
-    }
     setIsSent(true);
   };
   return (
@@ -32,7 +27,6 @@ export default function ContactForm(props) {
             <p>Give me a feedback or a job offer</p>
           </header>
           <form
-            onSubmit={(e) => submitHandler(e)}
             action='https://formsubmit.co/s_gulenc@outlook.com'
             method='POST'>
             <input
@@ -46,7 +40,7 @@ export default function ContactForm(props) {
               value="I've received your email. Thank you for filling the form and sending me your feedback. I'll get back to you soon."></input>
             <div className='form-group'>
               <label htmlFor='range'>How much did you like my portfolio?</label>
-              <input type='range' name='range' id='range' />
+              <input type='range' name='range' id='range' defaultValue='50%' />
             </div>
             <div className='form-group'>
               <label htmlFor='first-name'>First Name</label>
@@ -64,15 +58,18 @@ export default function ContactForm(props) {
               <label htmlFor='message'>Your message to me:</label>
               <textarea name='message' id='message' cols='30' rows='10' />
             </div>
-            <button type='submit' className='btn'>
+            <button
+              type='submit'
+              className='btn'
+              onClick={(e) => submitHandler(e)}>
               Send
             </button>
           </form>
         </section>
       )}
       <div className='btn-box'>
-        <Link to='/'>
-          <button className='btn form-btn'>Back</button>
+        <Link to='/' className='btn form-btn'>
+          Back
         </Link>
       </div>
     </main>

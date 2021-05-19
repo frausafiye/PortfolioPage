@@ -1,18 +1,27 @@
-import React,{useEffect,useState} from 'react'
-import styled,{keyframes } from "styled-components";
-import { createHashHistory } from 'history';
+/** @format */
+
+import React, { useEffect, useState } from "react";
+import styled, { keyframes } from "styled-components";
+import { createHashHistory } from "history";
 
 export default function Skill(props) {
-  const [scrolling,setScrolling]=useState("paused")
-  let History=createHashHistory()
+  const [scrolling, setScrolling] = useState("paused");
+  let History = createHashHistory();
+
   useEffect(() => {
-    let func=(e)=>{if(window.pageYOffset>2500 && window.pageYOffset<2900){
+    let func = (e) => {
+      if (window.pageYOffset > 2100 && window.pageYOffset < 2800) {
         setScrolling("running");
-      }}
-    if(History.location.pathname=="/"){
-      window.addEventListener("scroll",(e)=>func(e))}
-    return(()=>{window.removeEventListener("scroll",func)})
-  }, [])
+      }
+    };
+    if (History.location.pathname == "/") {
+      window.addEventListener("scroll", (e) => func(e));
+    }
+    return () => {
+      window.removeEventListener("scroll", func);
+    };
+  }, []);
+
   let getChangeWidth = (props) => keyframes`
     0% { width:0 }
     100% { width: ${props.value}}
@@ -27,31 +36,29 @@ export default function Skill(props) {
     top: 0;
     left: 0;
     background: rgba(93, 9, 121, 1);
-    width:${props.value};
+    width: ${props.value};
     height: 100%;
     border-radius: var(--radius);
-    animation: ${props => getChangeWidth(props)} 3s ease;
-    animation-play-state:${scrolling};
-    `
+    animation: ${(props) => getChangeWidth(props)} 3s ease;
+    animation-play-state: ${scrolling};
+  `;
 
   let P = styled.p`
     position: absolute;
     top: -2rem;
     left: ${props.value};
     transform: translateX(-50%);
-    animation: ${props => getChangeLeft(props)} 3s ease;
-    animation-play-state:${scrolling};
-    `
-  
+    animation: ${(props) => getChangeLeft(props)} 3s ease;
+    animation-play-state: ${scrolling};
+  `;
+
   return (
-  <div className="skill">
-    <p>{props.lang}</p>
-    <div className="skill-container">
-      <Div {...props} ></Div>
-      <P {...props}>{props.value}</P>
+    <div className='skill'>
+      <p>{props.lang}</p>
+      <div className='skill-container'>
+        <Div {...props}></Div>
+        <P {...props}>{props.value}</P>
+      </div>
     </div>
-  </div>
-  )
+  );
 }
-
-
