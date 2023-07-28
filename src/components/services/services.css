@@ -23,6 +23,7 @@
   background: rgb(233, 185, 73);
   color: #fff;
   background-color: rgb(169, 17, 211);
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.313rem 0.938rem;
 }
 .service:hover p {
   color: #fff;
@@ -37,4 +38,3 @@
     column-gap: 2rem;
   }
 }
-
