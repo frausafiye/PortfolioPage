@@ -73,12 +73,12 @@ export default function Skill(props) {
         {props.type === "loading" ? (
           <>
             <LoadingDiv {...props}></LoadingDiv>
-            <P {...props}>{props.value}</P>
+            <P {...props}></P>
           </>
         ) : (
           <>
             <Div {...props}></Div>
-            <P {...props}>{props.value}</P>
+            <P {...props}></P>
           </>
         )}
       </div>

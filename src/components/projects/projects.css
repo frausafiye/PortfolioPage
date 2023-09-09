@@ -29,7 +29,8 @@
   border: 2px solid white;
   border-radius: var(--radius);
   height: 15rem;
-  object-fit: cover;
+  object-fit: scale-down;
+  background-color: white;
 }
 .project:hover .project-img {
   opacity: 0.1;

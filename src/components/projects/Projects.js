@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import Project1Img from "../../images/bookshopper.png";
-import Project2Img from "../../images/xox.png";
+import Project2Img from "../../images/xoxGame.png";
 import Project3Img from "../../images/kita.jpg";
 import Project4Img from "../../images/wheather-img.jpg";
 import "./projects.css";
@@ -21,7 +21,6 @@ export default function Projects() {
         </section>
       </div>
       <div className="section-center projects-center">
-        {/* //LINKLER */}
         <Project
           to="https://github.com/frausafiye/kitacare"
           src={Project3Img}
