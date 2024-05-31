@@ -1,5 +1,5 @@
 #container {
-  background-color:rgb(219, 218, 219);
+  background-color: rgb(219, 218, 219);
   color: black;
   font-family: "Raleway", sans-serif;
   line-height: 1.8;
@@ -14,13 +14,12 @@
   margin: 0 auto;
   max-width: 400px;
   padding: 20px;
-
 }
 
 .form-wrap h3,
 .form-wrap p {
   text-align: center;
-  color:#fff
+  color: #fff;
 }
 
 .form-wrap .form-group {
@@ -29,7 +28,7 @@
 
 .form-wrap .form-group label {
   display: block;
-  color:#fff;
+  color: #fff;
 }
 
 .form-wrap .form-group input {
@@ -46,12 +45,11 @@
   padding: 10px;
   margin-top: 20px;
   color: rgb(95, 24, 110);
-
   cursor: pointer;
 }
 
 .form-wrap button:hover {
-  color:#fff;
+  color: #fff;
   background: #9c37a0;
 }
 
@@ -65,12 +63,12 @@
   margin-top: 10px;
   color: white;
 }
-.btn-box{
+.btn-box {
   display: block;
-  background-color:rgb(219, 218, 219);
+  background-color: rgb(219, 218, 219);
   height: 10vh;
 }
-.form-btn{
+.form-btn {
   position: absolute;
   text-align: center;
   margin: 2vh auto;

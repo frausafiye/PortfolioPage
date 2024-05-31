@@ -1,0 +1,161 @@
+.background {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(223, 197, 238) 0%,
+    rgb(95, 24, 110) 100%
+  );
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  font-size: 12px;
+}
+
+.screen {
+  position: relative;
+  background: #222;
+  background: rgb(242, 240, 242);
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: rgb(95, 24, 110);
+  font-size: 26px;
+}
+
+.form-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: rgb(95, 24, 110);
+}
+
+.form-info {
+  margin-top: auto;
+  font-size: 12px;
+  color: #888;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group.buttons {
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.form-group.buttons .first-button {
+  margin-right: 10px;
+}
+.form-input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #444;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input::placeholder {
+  color: rgb(139, 64, 154);
+}
+
+.form-input:focus {
+  border-bottom-color: #ddd;
+}
+
+.form-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  background: none;
+  border: none;
+  color: rgb(139, 64, 154);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-button:hover {
+  color: rgb(95, 24, 110);
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .form-title {
+    flex-direction: row;
+  }
+
+  .form-title span {
+    margin-right: 12px;
+  }
+
+  .form-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
